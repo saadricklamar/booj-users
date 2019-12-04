@@ -1,3 +1,14 @@
-## booj-users
+# booj-users
 
-A RESTful API for storing user login/password information for the booj-books application.
+
+## About the API
+
+**booj users** is a RESTful API for storing user login/password information for the booj-books application.
+
+## Tech Stack
+
+* [Node.js](https://nodejs.org/en/) 
+* [Express](https://expressjs.com/) 
+* [Knex](http://knexjs.org/) 
+* [PostgreSQL](https://www.postgresql.org/)
+
