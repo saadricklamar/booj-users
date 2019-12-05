@@ -3,7 +3,7 @@
 
 ## About the API
 
-**booj users** is a RESTful API for storing user login/password information for the booj-books application.
+**booj users** is a RESTful API for storing MOCK user login/password information for the booj-books application.
 
 ## Tech Stack
 
