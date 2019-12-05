@@ -42,3 +42,20 @@ app.post("/api/v1/users", (request, response) => {
       response.status(500).json({ error });
     });
 });
+
+app.delete("/api/v1/users/:id", (request, response) => {
+  const id = parseInt(request.params.id);
+  database("users")
+    .where("id", id)
+    .delete()
+    .then(user => {
+      if (!user) {
+        response.status(404).send("This user does not exist");
+      } else {
+        response.status(200).send("The user was deleted");
+      }
+    })
+    .catch(error => {
+      response.status(500).json({ error });
+    });
+});
